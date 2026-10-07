@@ -1,0 +1,32 @@
+:root { --ink: #0b100d; --muted: #4a5651; --subtle: #626d68; --line: #e3e8e5; --soft: #f3f5f4; --green: #008751; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: #fff; -webkit-font-smoothing: antialiased; }
+a { color: var(--green); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; background: var(--soft); padding: 2px 6px; border-radius: 6px; }
+pre { background: #0b130e; color: #e6ece8; padding: 16px 18px; border-radius: 12px; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 28px 32px 64px; }
+.bar { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; }
+.logo { width: 26px; height: 26px; border-radius: 8px; background: var(--green); }
+nav { display: flex; gap: 20px; font-size: 15px; }
+nav a { color: var(--muted); text-decoration: none; }
+.hero { padding: 96px 0 40px; }
+.hero.small { padding: 72px 0 24px; }
+.eyebrow { margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
+h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 56px; line-height: 1.05; letter-spacing: -0.02em; max-width: 18ch; }
+.posts { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.posts a { display: grid; grid-template-columns: 130px 1fr; gap: 4px 24px; padding: 24px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+.posts .date { grid-row: span 3; color: var(--subtle); font-size: 14px; padding-top: 4px; }
+.posts .title { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+.posts .desc { color: var(--muted); line-height: 1.5; }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.tag { font-size: 13px; color: var(--muted); background: var(--soft); padding: 3px 9px; border-radius: 999px; text-decoration: none; }
+.tag.big { font-size: 16px; padding: 8px 14px; margin: 0 8px 8px 0; display: inline-block; }
+.tag span { color: var(--subtle); }
+.post { padding: 72px 0 24px; }
+.post .date { color: var(--subtle); margin: 0 0 14px; }
+.prose { font-size: 18px; line-height: 1.7; color: #2f3b36; }
+footer { margin-top: 72px; color: var(--subtle); font-size: 14px; }
+@media (max-width: 640px) { h1 { font-size: 40px; } .posts a { grid-template-columns: 1fr; } .posts .date { grid-row: auto; } }
