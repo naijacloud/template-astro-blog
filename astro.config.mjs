@@ -8,4 +8,8 @@ const site = process.env.SITE_URL || 'https://example.naijacloud.app';
 export default defineConfig({
   site,
   integrations: [sitemap()],
+  // One HTML file per page (posts/hello-world.html), so the build has a single
+  // index.html at its root and any static file server serves it as-is.
+  build: { format: 'file' },
+  trailingSlash: 'never',
 });

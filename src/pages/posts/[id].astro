@@ -15,7 +15,7 @@ const { Content } = await render(post);
   <article class="post">
     <p class="date">{formatDate(post.data.date)}</p>
     <h1>{post.data.title}</h1>
-    <p class="tags">{post.data.tags.map((t) => <a class="tag" href={`/tags/${t}/`}>{t}</a>)}</p>
+    <p class="tags">{post.data.tags.map((t) => <a class="tag" href={`/tags/${t}.html`}>{t}</a>)}</p>
     <div class="prose"><Content /></div>
   </article>
 </Base>

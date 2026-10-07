@@ -9,5 +9,5 @@ const tags = [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 ---
 <Base title="Tags">
   <section class="hero small"><p class="eyebrow">Browse</p><h1>Tags</h1></section>
-  <p class="taglist">{tags.map(([t, n]) => <a class="tag big" href={`/tags/${t}/`}>{t} <span>{n}</span></a>)}</p>
+  <p class="taglist">{tags.map(([t, n]) => <a class="tag big" href={`/tags/${t}.html`}>{t} <span>{n}</span></a>)}</p>
 </Base>

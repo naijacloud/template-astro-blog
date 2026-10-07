@@ -18,7 +18,7 @@ const { posts } = Astro.props;
   <section class="hero small"><p class="eyebrow">Tag</p><h1>{tag}</h1></section>
   <ul class="posts">
     {posts.map((post) => (
-      <li><a href={`/posts/${post.id}/`}><span class="date">{formatDate(post.data.date)}</span><span class="title">{post.data.title}</span><span class="desc">{post.data.description}</span></a></li>
+      <li><a href={`/posts/${post.id}.html`}><span class="date">{formatDate(post.data.date)}</span><span class="title">{post.data.title}</span><span class="desc">{post.data.description}</span></a></li>
     ))}
   </ul>
 </Base>
