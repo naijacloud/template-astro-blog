@@ -12,17 +12,12 @@ Click **Deploy** above, or open <https://naijacloud.com/new?template=astro-blog&
 
 - Astro 5, with posts as Markdown files in `src/content/posts`
 - Tag pages, an RSS feed at `/rss.xml` and a sitemap at `/sitemap-index.xml`
-- Builds to `dist/`; Naijacloud detects Astro and serves `dist/` with nginx
+- Builds to `dist/`, one HTML file per page; Naijacloud detects Astro and serves `dist/` with nginx
 
-## Writing a post
+## Making it yours
 
-Add a Markdown file to `src/content/posts` with a `title`, `description`, `date` and `tags`, commit it and redeploy.
-
-## Environment variables
-
-| Name | What it's for | Default |
-| --- | --- | --- |
-| `SITE_URL` | The address the blog is served from, used in the RSS feed, sitemap and canonical links | `https://example.naijacloud.app` |
+- Set `site` in `astro.config.mjs` to your blog's address; the feed and sitemap use it for absolute links.
+- Add a Markdown file to `src/content/posts` with a `title`, `description`, `date` and `tags`, commit it and redeploy.
 
 ## Run it locally
 
