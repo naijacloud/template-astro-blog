@@ -29,7 +29,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         <nav><a href="/">Posts</a><a href="/tags.html">Tags</a><a href="/rss.xml">RSS</a></nav>
       </header>
       <slot />
-      <footer>Built with Astro. <a href="/rss.xml">Subscribe by RSS</a>.</footer>
+      <footer>
+        <p>Built with Astro. <a href="/rss.xml">Subscribe by RSS</a>.</p>
+        <a class="nc-badge" href="https://naijacloud.com/?ref=template-astro-blog"><span class="nc-mark" aria-hidden="true">NC</span><span>Deployed on <b>Naijacloud</b></span></a>
+      </footer>
     </div>
   </body>
 </html>
